@@ -38,7 +38,7 @@
 
     <Resources>
       <bt:Urls xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0">
-        <bt:Url id="functionFile" DefaultValue="https://YOUR_URL/index.html"/>
+        <bt:Url id="functionFile" DefaultValue="https://ddrozd-arch.github.io/Addin/index.html"/>
       </bt:Urls>
     </Resources>
 
