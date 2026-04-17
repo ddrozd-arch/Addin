@@ -1,0 +1,35 @@
+<svg width="256" height="256" viewBox="0 0 256 256"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Kolory -->
+  <style>
+    .person1 { stroke:#A7D4FF; fill:none; stroke-width:10; }
+    .person2 { stroke:#5FA8FF; fill:none; stroke-width:10; }
+    .person3 { stroke:#1C6EDC; fill:none; stroke-width:10; }
+    .envelope { fill:#1C6EDC; }
+    .paper { fill:white; }
+    .warn { fill:#FF8C00; }
+    .warnMark { fill:white; }
+  </style>
+
+  <!-- Koperta -->
+  <rect x="24" y="96" width="140" height="90" rx="10" class="envelope"/>
+  <polygon points="24,96 94,150 164,96" class="envelope"/>
+  <rect x="40" y="102" width="108" height="60" rx="6" class="paper"/>
+
+  <!-- Trzy osoby (obrysy) -->
+  <!-- Najjaśniejszy przód -->
+  <circle cx="190" cy="150" r="26" class="person1"/>
+  <!-- Średni -->
+  <circle cx="168" cy="132" r="26" class="person2"/>
+  <!-- Najciemniejszy -->
+  <circle cx="212" cy="132" r="26" class="person3"/>
+
+  <!-- Trójkąt ostrzegawczy (jednolity pomarańczowy) -->
+  <polygon points="200,40 240,110 160,110" class="warn"/>
+
+  <!-- Wykrzyknik -->
+  <rect x="196" y="60" width="8" height="32" rx="4" class="warnMark"/>
+  <circle cx="200" cy="100" r="5" class="warnMark"/>
+
+</svg>
