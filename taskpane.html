@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet"
+    href="https://res.cdn.office.net/files/fabric-cdn-prod_20230815.001/office-ui-fabric.min.css">
+
+  <style>
+    body { padding: 10px; }
+
+    .tabs { margin-bottom: 10px; }
+
+    .tab { display: none; }
+    .tab.active { display: block; }
+
+    .group {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+
+    .group h4 { margin-bottom: 8px; }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3px 0;
+    }
+
+    .danger {
+      color: #a80000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="ms-Fabric">
+
+  <!-- TABS -->
+  <div class="tabs ms-ButtonGroup">
+    <button class="ms-Button" onclick="showTab('mainTab')">
+      <span class="ms-Button-label">Główna</span>
+    </button>
+    <button class="ms-Button" onclick="showTab('domainsTab')">
+      <span class="ms-Button-label">Zaufane domeny</span>
+    </button>
+    <button class="ms-Button" onclick="showTab('trustedTab')">
+      <span class="ms-Button-label">Zaufane adresy</span>
+    </button>
+  </div>
+
+  <!-- MAIN -->
+  <div id="mainTab" class="tab active">
+    <h3>Zewnętrzni odbiorcy</h3>
+    <div id="externalList"></div>
+
+    <button id="saveBtn" class="ms-Button ms-Button--primary">
+      <span class="ms-Button-label">Dodaj do zaufanych</span>
+    </button>
+  </div>
+
+  <!-- DOMAINS -->
+  <div id="domainsTab" class="tab">
+    <h3>Dopuszczone domeny</h3>
+    <ul id="allowedList"></ul>
+  </div>
+
+  <!-- TRUSTED -->
+  <div id="trustedTab" class="tab">
+    <input id="searchBox" class="ms-TextField-field" placeholder="Szukaj..." />
+    <h3>Zaufane adresy</h3>
+    <div id="trustedList"></div>
+  </div>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
